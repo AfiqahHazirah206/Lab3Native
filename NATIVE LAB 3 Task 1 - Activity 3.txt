@@ -1,0 +1,95 @@
+NATIVE LAB 3
+TASK 1
+Activity 3
+
+fun main() {
+    val favoriteActor = null
+    println(favoriteActor)
+}
+output: null
+
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+    println(favoriteActor)
+
+    favoriteActor = null
+    println(favoriteActor)
+}
+output: Sandra Oh
+        null
+
+fun main() {
+    var number: Int? = 10
+    println(number)
+}
+output: 10
+
+fun main() {
+    var number: Int? = 10
+    println(number)
+    
+    number = null
+    println(number)
+}
+output: 10
+        null
+
+fun main() {
+    var favoriteActor: String = "Sandra Oh"
+    println(favoriteActor.length)
+}
+output: 9
+
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+    println(favoriteActor?.length)
+}
+output: 9
+
+fun main() {
+    var favoriteActor: String? = null
+    println(favoriteActor?.length)
+}
+output: null
+
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+    println(favoriteActor!!.length)
+}
+output: 9
+
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+
+    if (favoriteActor != null) {
+      println("The number of characters in your favorite actor's name is ${favoriteActor.length}.")
+    }
+}
+output: The number of characters in your favorite actor's name is 9.
+
+fun main() {
+    var favoriteActor: String? = null
+
+    if(favoriteActor != null) {
+      println("The number of characters in your favorite actor's name is ${favoriteActor.length}.")
+    } else {
+      println("You didn't input a name.")
+    }
+}
+output: You didn't input a name.
+
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+
+    val lengthOfName = if (favoriteActor != null) {
+      favoriteActor.length
+    } else {
+      0
+    }
+
+    println("The number of characters in your favorite actor's name is $lengthOfName.")
+}
+output: The number of characters in your favorite actor's name is 9.
+
+
+

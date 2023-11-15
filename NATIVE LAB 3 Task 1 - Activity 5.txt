@@ -1,0 +1,44 @@
+NATIVE LAB 3
+TASK 1
+Activity 5
+
+fun main() {
+    val trickFunction = trick
+    trick()
+}
+
+val trick = {
+    println("No treats!")
+}
+output: No treats!
+
+fun main() {
+    val trickFunction = trick
+    trick()
+    trickFunction()
+}
+
+val trick = {
+    println("No treats!")
+}
+output: No treats!
+No treats!
+
+fun main() {
+    val trickFunction = trick
+    trick()
+    trickFunction()
+    treat()
+}
+val trick = {
+    println("No treats!")
+}
+val treat: () -> Unit = {
+    println("Have a treat!")
+}
+output: No treats!
+No treats!
+Have a treat!
+
+
+
